@@ -123,14 +123,13 @@
     <script>
       var array = new Uint32Array(10);
       self.crypto.getRandomValues(array);
-      var carousel = document.getElementById("carousel-inner");
       items = "";
       console.log("Your lucky numbers:");
       for (var i = 0; i < array.length; i++) {
         console.log(array[i]);
         items += '<div class="carousel-item">' + array[i] + "</div>";
       }
-      carousel.innerHTML(items);
+      document.getElementById("carousel-inner").innerHTML= items
     </script>
   </body>
 </html>
