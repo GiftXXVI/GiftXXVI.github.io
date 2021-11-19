@@ -62,18 +62,16 @@
     </nav>
 
     <div class="px-4 py-5 my-5">
-      <div class="jumbotron">
-        <h1 class="display-4">Welcome</h1>
-        <p class="lead">The page has generated the following list of random numbers:</p>
-        <ul class="list-group">
-          
-        </ul>
-        <hr class="my-4">
-        <p>Social links coming soon.</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
+      <div class="container">
+        <div class="jumbotron">
+          <h1 class="display-4">Welcome</h1>
+          <p class="lead">
+            The page has generated the following list of random numbers:
+          </p>
+          <ul id="list-group "class="list-group"></ul>
+        </div>
       </div>
+
       <h1 class="display-5 fw-bold text-center">Gift Chimphonda</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">
@@ -131,9 +129,9 @@
       console.log("Your lucky numbers:");
       for (var i = 0; i < array.length; i++) {
         console.log(array[i]);
-        items += '<li class="list-group-item">' + array[i] + '</li>' 
+        items += '<li class="list-group-item">' + array[i] + "</li>";
       }
-      document.getElementById('list-group').innerHTML = items
+      document.getElementById("list-group").innerHTML = items;
     </script>
   </body>
 </html>
